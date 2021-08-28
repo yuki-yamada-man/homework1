@@ -1,7 +1,9 @@
 <body>
+<div class='one'>
 <h2>Books</h2>
 
-<table>
+<div class=container >
+ <table class="table table-striped">
   <thead>
     <tr>
       <th>Title</th>
@@ -22,19 +24,22 @@
     </tr>
     <% end %>
   </body>
-</table>
-
+ </table>
+</div>
 
 <h2>New book</h2>
 <%= form_with model:@book,local:true do |f| %>
 
  <p>Title</p>
- <%= f.text_field:title %>
+ <%= f.text_field:title ,size:"90x5" %>
 
  <p>Body</p>
- <%= f.text_area:body %>
+ <%= f.text_area:body ,size:"90x10"%>
 
+<div>
  <%= f.submit 'Create book' %>
+</div>
+</div>
 
 <% end %>
 </body>
