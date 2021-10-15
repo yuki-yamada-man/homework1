@@ -9,9 +9,9 @@
  <div>
  <%= f.submit 'Update book' %>
  </div>
- <%= link_to 'Show',book_path(@book.id) %>
+ <%= link_to 'Show',book_path(@book.id), class:"btn btn-success" %>
    |
- <%= link_to 'Back' ,books_path %>
+ <%= link_to 'Back' ,books_path, class:"btn btn-danger" %>
 
 
 <% end %>
