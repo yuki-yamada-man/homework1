@@ -6,13 +6,15 @@
  <%= f.text_field:title,size:"60x5" %>
  <p>Body</p>
  <%= f.text_area:body ,size:"60x10"%>
- <div>
- <%= f.submit 'Update book' %>
+ <div class= "button mt-md-3">
+ <%= f.submit 'Update book', class:"btn btn-primary" %>
  </div>
+
+ <div class= "button mt-md-3">
  <%= link_to 'Show',book_path(@book.id), class:"btn btn-success" %>
    |
  <%= link_to 'Back' ,books_path, class:"btn btn-danger" %>
-
+ </div>
 
 <% end %>
 </center>
