@@ -31,13 +31,13 @@
 <%= form_with model:@book,local:true do |f| %>
 
  <p>Title</p>
- <%= f.text_field:title ,size:"90x5" %>
+ <%= f.text_field:title ,size:"90x10" %>
 
  <p>Body</p>
  <%= f.text_area:body ,size:"90x10"%>
 
 <div>
- <%= f.submit 'Create book' %>
+ <%= f.submit 'Create book', class:"btn btn-success" %>
 </div>
 </div>
 
